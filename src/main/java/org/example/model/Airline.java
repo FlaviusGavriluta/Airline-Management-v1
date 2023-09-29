@@ -12,6 +12,14 @@ public class Airline {
         this.employees = new ArrayList<>();
     }
 
+    public void addFlight(Flight flight) {
+        flights.add(flight);
+    }
+
+    public void addEmployee(Employee employee) {
+        employees.add(employee);
+    }
+
     public List<Flight> getFlights() {
         return flights;
     }

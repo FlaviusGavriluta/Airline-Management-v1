@@ -73,4 +73,14 @@ public class Flight {
     public void setFlightAttendants(List<FlightAttendant> flightAttendants) {
         this.flightAttendants = flightAttendants;
     }
+
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "id=" + id +
+                ", language=" + language +
+                ", pilots=" + pilots +
+                ", flightAttendants=" + flightAttendants +
+                '}';
+    }
 }

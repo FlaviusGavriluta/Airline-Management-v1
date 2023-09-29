@@ -25,4 +25,11 @@ public class FlightAttendant extends Employee {
     public boolean isReady() {
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "FlightAttendant{" +
+                "languages=" + languages +
+                '}';
+    }
 }

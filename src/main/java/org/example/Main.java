@@ -32,5 +32,17 @@ public class Main {
         flight.isReady();
 
         Airline airline = new Airline();
+        airline.addFlight(flight);
+
+
+        System.out.println("Get flights: ");
+        airline.getFlights().forEach(System.out::println);
+        System.out.println("--------------------");
+        System.out.println("Get employees: ");
+        airline.getFlights().forEach(flight1 -> flight1.getPilots().forEach(System.out::println));
+        airline.getFlights().forEach(flight1 -> flight1.getFlightAttendants().forEach(System.out::println));
+
+        System.out.println("--------------------");
+
     }
 }
