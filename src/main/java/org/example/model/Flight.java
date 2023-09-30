@@ -1,7 +1,6 @@
 package org.example.model;
 
 import org.example.enums.Language;
-import org.example.enums.PilotType;
 
 import java.util.ArrayList;
 import java.util.List;

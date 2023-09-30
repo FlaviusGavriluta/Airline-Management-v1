@@ -1,7 +1,6 @@
 package org.example;
 
 import org.example.enums.Language;
-import org.example.enums.PilotType;
 import org.example.model.*;
 
 import java.util.Arrays;
@@ -9,8 +8,8 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-        Pilot pilot1 = new Pilot("pilot1", new Date(1987, 12, 04), PilotType.CAPTAIN);
-        Pilot pilot2 = new Pilot("pilot2", new Date(1957, 02, 14), PilotType.CO_PILOT);
+        Pilot pilot1 = new Captain("pilot1", new Date(1987, 12, 04));
+        Pilot pilot2 = new CoPilot("pilot2", new Date(1957, 02, 14));
 
         AnalogCompass c1 = new AnalogCompass();
         AnalogCompass c2 = new AnalogCompass();
