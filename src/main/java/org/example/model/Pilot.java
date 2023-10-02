@@ -1,5 +1,7 @@
 package org.example.model;
 
+import org.example.utils.AnalogCompass;
+
 import java.util.Date;
 
 public class Pilot extends Employee {

@@ -1,4 +1,7 @@
-package org.example.model;
+package org.example;
+
+import org.example.model.Employee;
+import org.example.model.Flight;
 
 import java.util.ArrayList;
 import java.util.List;

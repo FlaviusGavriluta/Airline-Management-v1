@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.enums.Language;
 import org.example.model.*;
+import org.example.utils.AnalogCompass;
 
 import java.util.Arrays;
 import java.util.Date;
