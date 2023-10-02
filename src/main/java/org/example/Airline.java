@@ -1,10 +1,14 @@
 package org.example;
 
+import org.example.enums.Language;
 import org.example.model.Employee;
 import org.example.model.Flight;
+import org.example.model.FlightAttendant;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Airline {
     private List<Flight> flights;
@@ -13,6 +17,13 @@ public class Airline {
     public Airline() {
         this.flights = new ArrayList<>();
         this.employees = new ArrayList<>();
+    }
+
+    public FlightAttendant findFlightAttendant() {
+        return (FlightAttendant) employees.stream()
+                .filter(employee -> employee instanceof FlightAttendant)
+                .max(Comparator.comparingInt(employee -> ((FlightAttendant) employee).getLanguages().size()))
+                .orElse(null);
     }
 
     public void addFlight(Flight flight) {
